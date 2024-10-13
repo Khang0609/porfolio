@@ -64,10 +64,14 @@ h1{
     padding: 0;
 }
 
+.second-row, .third-row{
+    margin-top: 25px;
+}
+
 .bg{
     background-color: #DDEFFF;
     border-radius: 24px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px ;
 }
 
