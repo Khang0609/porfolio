@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %} hehe {% endblock %}
+
+{% block content %}
+<h1>hi</h1>
+{% for info in Infomation %}
+    <h4><a href="{{info.id}}">{{info.name}}</a></h4>
+    <h1>{{info.birthday}}</h1>
+    <h1>{{info.phone}}</h1>
+{% endfor %}
+{% endblock %}

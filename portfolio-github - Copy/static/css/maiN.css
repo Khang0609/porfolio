@@ -1,0 +1,118 @@
+
+.container-md{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.banner-title{
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    transform: translate(0%, 50%);
+    color: #FD5F00;
+}
+
+.navbar{
+    height: 47px;
+    background-color: #ADF137;
+    padding: 0 !important;
+}
+
+.nav-link{
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #048F0A;
+}
+
+.nav-link:hover{
+    color: #048F0A;
+}
+
+.nav-link:visited{
+    color: #048F0A;
+}
+
+.active{
+    color: #005A04 !important;
+}
+
+#home{
+    margin-top: 190px !important;
+    margin-bottom: 90px ;
+}
+
+.section{
+    padding-left: 21%;
+}
+
+.avatar{
+    width: 220px;
+    transform: translate(7%,20%);
+}
+
+.short-container{
+    padding: 46px 0 0 20px !important;
+}
+
+.short-info{
+    background-color: #93D2FF;
+    border-radius: 22px;
+    padding: 20px 0 15px 25px;
+}
+
+.name{
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #021381;
+}
+
+.info{
+    font-size: 18px;
+    color: #2018D4;
+    line-height: 2;
+}
+
+.highlight{
+    color: #06008E;
+}
+
+.icon{
+    margin:15px 0px 0px 30px;
+    width: 50px;
+    border-radius: 7px;
+}
+
+#hobbies{
+    margin-top: 90px;
+}
+
+.hobbies-box{
+    background-color: #33CDFF;
+    margin: opx 0 34px 0;
+    width: 894px;
+    height: 380px;
+    border-radius: 25px;
+}
+
+.hobbies-text{
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#title{
+    font-size: 40px;
+    color: #004AB1;
+    margin: 13px 0 0 0;
+}
+
+#subtitle{
+    font-size: 24px;
+    color: #006BFF;
+}

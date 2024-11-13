@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block title %} Portfolio {% endblock %}
+
+{% load static %}
+
+{% block content %}
+{% for info in Infomation %}
+<div class="container-md">
+    <div class="header fixed-top">
+        <div class="banner">
+            <img src="{% static 'images/res/banner/bg.png' %}" alt="">
+        </div>
+        <nav class="navbar navbar-expand-lg ">
+            <ul class="nav navbar-nav">
+                <li class="nav-item" style="margin-left: 15px">
+                  <a class="nav-link active" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#hobbies">HOBBIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAMILY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SCHOOL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FRIENDS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MORE</a>
+                </li>
+              </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div id="home" class="section">
+            <div class="row">
+                <div class="col-3">
+                    <img src="{% static 'images/res/content/avatar/avatar1.png' %}" alt="my_avatar" class="avatar">
+                </div>
+                <div class="col-9 short-container">
+                    <div class="short-info" style="width: 620px !important;">
+                        <h2 class="name">{{info.name}}</h2>
+                        <div class="row info-container">
+                            <div class="col-9" style="padding-left: 30px ;">
+                                <p class="info">
+                                    Birthday: <span class="highlight" >{{info.birthday}}</span><br>
+                                    Schools: <span class="highlight" >{{info.schools}}</span><br>
+                                    Address: <span class="highlight" >{{info.address}}</span><br>
+                                    Phone: <span class="highlight">{{info.phone}}</span><br>
+                                    Email: <span class="highlight">{{info.email}}</span>
+                                </p>
+                            </div>
+                            <div class="col-3">
+                                <a href="https://www.facebook.com/Rimuru1092" target="_blank"><img src="{% static 'images\res\content\social_media\facebook.png' %}" alt="facebook-icon" class="icon" style="margin-top: 0 !important;"></a>
+                                <a href="https://www.facebook.com/Rimuru1092" target="_blank"><img src="{% static 'images\res\content\social_media\insta.jpg' %}" alt="instagram-icon" class="icon"></a>
+                                <a href="https://www.facebook.com/Rimuru1092" target="_blank"><img src="{% static 'images\res\content\social_media\youtube.jpg' %}" alt="youtube" class="icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hobbies" class="section">
+            <div class="row">
+                <div class="col-2">
+
+                </div>
+                <div class="col-8 hobbies-box text-center">
+                    <div class="title-container">
+                        <h1 class="hobbies-text" id="title">MY HOBBIES</h1>
+                        <h3 class="hobbies-text" id="subtitle">
+                            I have tried many things in my life
+                        </h3>
+                    </div>
+                    <div id="carouselExampleCaptions" class="carousel slide hobbies-container" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
+                               <img src="..." class="d-block w-100" alt="...">
+                               <div class="carousel-caption d-none d-md-block">
+                               <h5>First slide label</h5>
+                               <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                            <div class="carousel-item">
+                               <img src="..." class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
