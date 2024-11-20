@@ -46,7 +46,7 @@
 }
 
 .section{
-    padding-left: 21%;
+    padding: 0;
 }
 
 .avatar{
@@ -89,7 +89,8 @@
 }
 
 #hobbies{
-    margin-top: 90px
+    margin-top: 90px;
+    padding: 0;
 }
 
 .hobbies-box{
@@ -125,3 +126,18 @@
     color: black;
 }
 
+#family{
+    margin-top: 40px;
+}
+
+.left{
+    margin-right: 0;
+}
+
+.top{
+    margin-bottom: 40px;
+}
+
+.family-image{
+    height: 280px;
+}
