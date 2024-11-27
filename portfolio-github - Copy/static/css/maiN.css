@@ -47,6 +47,7 @@
 
 .section{
     padding: 0;
+    margin: auto !important;
 }
 
 .avatar{
@@ -127,7 +128,7 @@
 }
 
 #family{
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .left{
@@ -138,6 +139,38 @@
     margin-bottom: 40px;
 }
 
+.family-box{
+    border-radius: 25px;
+}
+
 .family-image{
     height: 280px;
+}
+
+.family-highlight{
+    color: #fd5a5a;
+}
+
+.bg-primary{
+    background-color: #10375C !important;
+    color: #F4F6FF !important;
+}
+
+.school-info{
+    padding-top: 10px;
+    margin-left: 25px;
+    background-color: #FA4032 ;
+    border-radius: 20px ;
+    color: white !important;
+    max-width: 350px !important;
+}
+
+#school{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.schools-image{
+    border-radius: 20px;
+    height: 150px;
 }

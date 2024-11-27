@@ -13,27 +13,22 @@
         <nav class="navbar navbar-expand-lg ">
             <ul class="nav navbar-nav">
                 <li class="nav-item" style="margin-left: 15px">
-                  <a class="nav-link" href="#">HOME</a>
+                  <a class="nav-link" href="#home">HOME</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#hobbies">HOBBIES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">FAMILY</a>
+                    <a class="nav-link" href="#family">FAMILY</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SCHOOL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FRIENDS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">MORE</a>
+                    <a class="nav-link" href="#school">SCHOOL</a>
                 </li>
               </ul>
         </nav>
     </div>
     <div class="content">
+        
         <div id="home" class="section">
             <div class="row">
                 <div class="col-3">
@@ -62,6 +57,7 @@
                 </div>
             </div>
         </div>
+
         <div id="hobbies" class="section">
             <div class="row">
                 <div class="col-2">
@@ -134,40 +130,98 @@
                 </div>
             </div>
         </div>
+
         <div id="family" class="section">
             <div class="row px-5 top">
                 <div class="col-6 left">
-                    <div class="text-center">
-                        <div class="p-3 bg-primary">
-                            <h4>My family has 4 people, my dad, my mom, my brother and me</h4>
-                            <img src="{% static 'images\res\content\family\IMG_4584.JPEG' %}" alt="" class="family-image">
-                        </div>
+                    <div class="text-center p-3 bg-primary family-box">
+                            <h4><span class="family-highlight">My family</span> has 4 people, my dad, my mom, my brother and me<br><br></h4>
+                            <img src="{% static 'images\res\content\family\giadinh.jpg' %}" alt="" class="family-image rounded">
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="text-center">
-                        <div class="p-3 bg-primary">
-                            <h4>My dad is a boss of a furniture design company, he is strong, creative and a good father also.</h4>
-                            <img src="{% static 'images/res/content/family/IMG_0591.jpeg' %}" alt="my-dad" class="family-image">
-                        </div>
+                    <div class="text-center p-3 bg-primary family-box">
+                            <h4><span class="family-highlight">My dad</span> is a boss of a furniture design company, he is strong, creative and a good father also.</h4>
+                            <img src="{% static 'images/res/content/family/IMG_0591.jpeg' %}" alt="my-dad" class="family-image rounded">
                     </div>
                 </div>
             </div>
             <div class="row px-5">
                 <div class="col-6 left">
-                    <div class="text-center">
-                        <h4>My mom is a wonderful woman, she always gently takes care of her family, and our house everyday.</h4>
-                        <img src="{% static 'images/res/content/family/IMG_0591.jpeg' %}" alt="my-dad" class="family-image">
+                    <div class="text-center p-3 bg-primary family-box">
+                        <h4><span class="family-highlight">My mom</span> is a wonderful woman, she always gently takes care of her family, and our house everyday.</h4>
+                        <img src="{% static 'images/res/content/family/me2.jpg' %}" alt="my-dad" class="family-image rounded">
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="text-center">
-                        <h4>My brother is a smart boys, but at his age now, he still a little bit lazy and disobeyed</h4>
-                        <img src="{% static 'images/res/content/family/IMG_0591.jpeg' %}" alt="my-dad" class="family-image">
+                    <div class="text-center p-3 bg-primary family-box">
+                        <h4><span class="family-highlight">My brother</span> is a smart boys, but at his age now, he still a little bit lazy and disobeyed.<br><br></h4>
+                        <img src="{% static 'images/res/content/family/IMG_4872.jpeg' %}" alt="my-dad" class="family-image rounded">
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="school">
+            <div class="row">
+                <div class="col-4 school-info">
+                    <div class="text-center">
+                        <img src="{% static 'images/res/content/schools/truong-thpt-mac-dinh-chi.jpg' %}" alt="MDC highschool" width="270px" class="rounded">
+                        <h4>Mac Dinh Chi highschool</h4>
+                    </div>
+                    <p style="margin-left: 0.5em; margin-bottom:10 !important">Mac Dinh Chi highschool is where I'm learning at the moment. At here, I've learnt a lot of new knowledge from good teachers, and had many new friends</p>
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-center">
+                                <img src="{% static 'images/res/content/schools/coHuong.jpg' %}" class="schools-image" alt="teacher">
+                                <p>My most favourite teacher</p>
+                            </div>
+                            
+                        </div>
+                        <div class="col">
+                            <div class="text-center">
+                                <img src="{% static 'images/res/content/schools/longThoai.jpg' %}" class="schools-image" alt="friend">
+                                <p>My best friend at school</p>
+                            </div>
+                            
+                        </div>
+                        <div class="col">
+                            <div class="text-center">
+                                <img src="{% static 'images/res/content/schools/8-3.JPEG' %}" class="schools-image" alt="8/3">
+                                <p>Women's day at school</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-center">
+                                <img src="{% static 'images/res/content/schools/fashion-show.JPEG' %}" class="schools-image" alt="fashion show">
+                                <p>Our fashion show at class</p>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="text-center">
+                                <img src="{% static 'images/res/content/schools/12A16.JPEG' %}" class="schools-image" alt="with 12">
+                                <p>My class with 12A16</p>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="text-center">
+                                <video height="150px" controls>
+                                    <source src="{% static 'images/res/content/schools/IMG_1518.MP4' %}">
+                                  </video>
+                                <p>Vietnamese Women's day with Nam Son</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class="footer">
 
