@@ -43,6 +43,9 @@
 #home{
     margin-top: 190px !important;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section{
