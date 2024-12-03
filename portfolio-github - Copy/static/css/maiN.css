@@ -10,7 +10,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-    transform: translate(0%, 50%);
+
     color: #FD5F00;
 }
 
@@ -55,7 +55,7 @@
 
 .avatar{
     width: 220px;
-    transform: translate(-2%,20%);
+    transform: translate(-2%,0%);
 }
 
 .short-container{

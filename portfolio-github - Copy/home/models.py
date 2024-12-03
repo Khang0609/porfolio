@@ -12,6 +12,9 @@ class info(models.Model):
     email = models.EmailField(null=False)
     address = models.CharField(null=True, max_length=200)
     schools = models.CharField(max_length=200)
+    facebook = models.URLField(null=False, max_length=200)
+    instagram = models.URLField(null=False, max_length=200)
+    youtube = models.URLField(null=False, max_length=200)
 
     def __str__(self):
         return self.name

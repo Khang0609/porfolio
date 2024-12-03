@@ -48,7 +48,7 @@
                                 </p>
                             </div>
                             <div class="col-3">
-                                <a href="https://www.facebook.com/Rimuru1092" target="_blank"><img src="{% static 'images\res\content\social_media\facebook.png' %}" alt="facebook-icon" class="icon" style="margin-top: 0 !important;"></a>
+                                <a href="{{info.facebook}}" target="_blank"><img src="{% static 'images\res\content\social_media\facebook.png' %}" alt="facebook-icon" class="icon" style="margin-top: 0 !important;"></a>
                                 <a href="https://www.facebook.com/Rimuru1092" target="_blank"><img src="{% static 'images\res\content\social_media\insta.jpg' %}" alt="instagram-icon" class="icon"></a>
                                 <a href="https://www.facebook.com/Rimuru1092" target="_blank"><img src="{% static 'images\res\content\social_media\youtube.jpg' %}" alt="youtube" class="icon"></a>
                             </div>
@@ -237,17 +237,17 @@
 
         // Hàm để kiểm tra và cập nhật trạng thái "active"
         function updateActiveMenu() {
-        let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            let scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-        sections.forEach((section, index) => {
-            let sectionTop = section.offsetTop - 100; // Thêm giá trị offset nếu cần
-            let sectionBottom = sectionTop + section.offsetHeight;
+            sections.forEach((section, index) => {
+                    let sectionTop = section.offsetTop - 100; // Thêm giá trị offset nếu cần
+                    let sectionBottom = sectionTop + section.offsetHeight;
 
-            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-            menuItems.forEach(item => item.classList.remove('active')); // Xóa lớp active khỏi tất cả menu items
-            menuItems[index].classList.add('active'); // Thêm lớp active cho menu item tương ứng
-            }
-        });
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    menuItems.forEach(item => item.classList.remove('active')); // Xóa lớp active khỏi tất cả menu items
+                    menuItems[index].classList.add('active'); // Thêm lớp active cho menu item tương ứng
+                }
+            });
         }
 
         // Gọi hàm khi cuộn trang
